@@ -1,0 +1,25 @@
+### GET metadata 
+
+GET http://localhost:4004/sflight
+
+
+### GET Customers
+
+GET http://localhost:4004/sflight/Customers
+
+### Get Berlin Customers
+
+GET http://localhost:4004/sflight/BerlinCustomer 
+
+
+### Get Customer id=5
+
+GET http://localhost:4004/sflight/Customers?$filter=ID eq '00000005'
+
+
+### Update Customer id=5
+
+PATCH http://localhost:4004/sflight/Customers/00000005
+Content-Type: application/json
+
+{"REGION" : "TES"}
